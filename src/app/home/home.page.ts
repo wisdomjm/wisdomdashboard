@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+import { AuthenticationService } from '../services/authentication.service';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -7,6 +10,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  email: any;
+  password: any;
+  
+  constructor(
+    public AutenticationUser: AuthenticationService,
+    
+  ) {}
+
+
 
 }

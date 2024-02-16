@@ -3,6 +3,30 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  /** JMprimary **/
+  --ion-color-jmprimary: #2176ff;
+	--ion-color-jmprimary-rgb: 0,142,214;
+	--ion-color-jmprimary-contrast: #ffffff;
+	--ion-color-jmprimary-contrast-rgb: 255, 255, 255;
+	--ion-color-jmprimary-shade: #007dbc;
+	--ion-color-jmprimary-tint: #1a99da;
+
+  --ion-color-jmvioleta: #571089;
+	--ion-color-jmvioleta-rgb: 87,16,137;
+	--ion-color-jmvioleta-contrast: #ffffff;
+	--ion-color-jmvioleta-contrast-rgb: 255,255,255;
+	--ion-color-jmvioleta-shade: #4d0e79;
+	--ion-color-jmvioleta-tint: #682895;
+
+  /** JMsecondary **/
+  --ion-color-jmsecondary: #27187e;
+	--ion-color-jmsecondary-rgb: 219,40,165;
+	--ion-color-jmsecondary-contrast: #ffffff;
+	--ion-color-jmsecondary-contrast-rgb: 255, 255, 255;
+	--ion-color-jmsecondary-shade: #c12391;
+	--ion-color-jmsecondary-tint: #df3eae;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,6 +98,34 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+.ion-color-jmvioleta {
+	--ion-color-base: var(--ion-color-jmvioleta);
+	--ion-color-base-rgb: var(--ion-color-jmvioleta-rgb);
+	--ion-color-contrast: var(--ion-color-jmvioleta-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-jmvioleta-contrast-rgb);
+	--ion-color-shade: var(--ion-color-jmvioleta-shade);
+	--ion-color-tint: var(--ion-color-jmvioleta-tint);
+}
+
+
+.ion-color-jmprimary {
+	--ion-color-base: var(--ion-color-jmprimary);
+	--ion-color-base-rgb: var(--ion-color-jmprimary-rgb);
+	--ion-color-contrast: var(--ion-color-jmprimary-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-jmprimary-contrast-rgb);
+	--ion-color-shade: var(--ion-color-jmprimary-shade);
+	--ion-color-tint: var(--ion-color-jmprimary-tint);
+}
+
+.ion-color-jmsecondary {
+	--ion-color-base: var(--ion-color-jmsecondary);
+	--ion-color-base-rgb: var(--ion-color-jmsecondary-rgb);
+	--ion-color-contrast: var(--ion-color-jmsecondary-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-jmsecondary-contrast-rgb);
+	--ion-color-shade: var(--ion-color-jmsecondary-shade);
+	--ion-color-tint: var(--ion-color-jmsecondary-tint);
 }
 
 @media (prefers-color-scheme: dark) {

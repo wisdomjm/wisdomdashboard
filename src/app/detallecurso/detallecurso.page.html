@@ -1,0 +1,31 @@
+<ion-header [translucent]="true" class="ion-no-border">
+
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{cursos.nombreCurso}}</ion-title>
+    <ion-item lines="none" slot="end" color="light">
+      <ion-avatar slot="start">
+        <img src="../../assets/icons/wisdomlogo.jpg" alt="">
+      </ion-avatar>
+      <ion-label>
+        <h1>Admin</h1>
+      </ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div>
+    <p>Nombre del Curso: {{cursos.nombreCurso}}</p>
+    <p>Id del curso: {{cursos.id}}</p>
+    <p>Categoria: {{cursos.categoria}}</p>
+    <p>Descripcion corta: {{cursos.descripcionCorta}}</p>
+    <p>Descripcion Larga: {{cursos.descripcionLarga}}</p>
+    <p>Numero de Clases: {{cursos.numeroSubClases}}</p>
+    <br>
+    <img src="{{cursos.imagenCurso}}" alt="Imagen">
+  </div>
+  
+</ion-content>

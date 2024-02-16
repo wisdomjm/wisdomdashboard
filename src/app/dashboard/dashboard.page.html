@@ -1,0 +1,162 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-title>Dashboard</ion-title>
+    <ion-item lines="none" slot="end" color="light">
+      <ion-avatar slot="start" (click)="AutenticationUser.SignOut()">
+        <img src="../../assets/icons/wisdomlogo.jpg" alt="">
+      </ion-avatar>
+      <ion-label>
+        <h1>Admin</h1>
+      </ion-label>
+    </ion-item>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="main-content">
+    <div class="left_content">
+      <app-side-menu></app-side-menu>
+    </div>
+
+    <div class="right_content">
+      <!--Lista de Cursos-->
+      <!--app-cursos-activos></app-cursos-activos-->
+
+      <h1 class="main-label titulo" style="font-weight: 200;">Lista de Cursos</h1>
+      <br>
+      <!--swiper-container [slidesPerView]="3.5" [loop]="false" [speed]="500" [autoplay]="true"
+        style="padding: 10px auto !important; height: 420px;"
+        css-mode="true">
+
+        <swiper-slide -->
+         <div class="cursos"> 
+            <div class="contenedor_cursos" *ngFor="let curso of cursos">
+              <div class="imagen_curso">
+                <img src="{{curso.imagenCurso}}" alt="Imagen">
+              </div>
+              <div class="informacion_cursos">
+                <h1 class="subtitulo">{{curso.nombreCurso}}</h1>
+                <p class="texto-mediano">{{curso.descripcionCorta}}</p>
+                <p [routerLink]="['/detallecurso', curso.id]">Ver curso</p>
+                <!--h4 class="texto-pequeño">Estudiantes: 22</h4-->
+              </div>
+            </div>
+          </div>
+        <!--/swiper-slide>
+      </swiper-container-->
+
+
+      <!--ion-grid style="margin-top: -120px;">
+        <ion-row>
+          <ion-col size="6">
+            
+            
+            <div class="contenedorMensajes border-shadow">
+              
+              <ion-list class="ion-padding">
+                <ion-list-header>
+                  <h1 class="titulo">Lista de Mensajes</h1>
+                </ion-list-header>
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile1.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur et quam velit quo sed nam numquam sint odit soluta.</h4>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile2.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, ab praesentium. Sunt temporibus nesciunt labore.</h4>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile3.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, iure!</h4>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile4.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis magnam aperiam reprehenderit necessitatibus explicabo praesentium dolores sint alias consectetur! Iste mollitia sint optio, beatae repudiandae veritatis modi voluptate similique molestiae, earum deleniti?</h4>
+                  </ion-label>
+                </ion-item>
+ 
+              </ion-list>
+
+            </div>
+          </ion-col>
+
+          <ion-col size="6">
+           
+            
+            <div class="contenedorNotificaciones border-shadow">
+              
+              <ion-list class="ion-padding">
+                <ion-list-header>
+                  <h1 class="titulo">Lista de Notificaciones</h1>
+                </ion-list-header>
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile1.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, iure!</h4>
+                    <p class="texto-pequeño">1:22 pm</p>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile2.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, iure!</h4>
+                    <p class="texto-pequeño">1:22 pm</p>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile3.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, iure!</h4>
+                    <p class="texto-pequeño">1:22 pm</p>
+                  </ion-label>
+                </ion-item>
+
+                <ion-item>
+                  <ion-avatar slot="start">
+                    <img src="../../assets/profiles/profile4.jpg" alt="">
+                  </ion-avatar>
+                  <ion-label>
+                    <h4 class="texto-mediano">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, iure!</h4>
+                    <p class="texto-pequeño">1:22 pm</p>
+                  </ion-label>
+                </ion-item>
+ 
+              </ion-list>
+
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid-->
+
+    
+
+      
+    </div>
+  </div>
+</ion-content>
